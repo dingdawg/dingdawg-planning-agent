@@ -1,0 +1,71 @@
+{
+  "name": "dingdawg-planning-agent",
+  "version": "2.0.9",
+  "description": "Governance receipts for AI agents — project planning with sprint estimation, task breakdown, and risk assessment that sharpens with every sprint. Every decision signed and receipted for EU AI Act, Colorado AI Act (SB 24-205), and NIST AI RMF audit trails.",
+  "main": "dist/index.js",
+  "bin": {
+    "dingdawg-planning-agent": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "bash ../../ip-gate.sh ./dist"
+  },
+  "keywords": [
+    "mcp",
+    "ai-planning",
+    "project-management",
+    "decision-matrix",
+    "risk-analysis",
+    "effort-estimation",
+    "retrospective",
+    "standup",
+    "governance",
+    "dingdawg",
+    "claude-code",
+    "cursor",
+    "ai-agent",
+    "governance-receipts",
+    "receipts",
+    "audit-trail",
+    "tamper-proof",
+    "ai-governance",
+    "responsible-ai",
+    "llm-governance",
+    "signed-receipts",
+    "ai-agents",
+    "eu-ai-act",
+    "compliance",
+    "model-context-protocol"
+  ],
+  "author": "Innovative Systems Global <support@dingdawg.com>",
+  "license": "BUSL-1.1",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dingdawg/dingdawg-planning-agent"
+  },
+  "homepage": "https://dingdawg.com/marketplace/planning-agent",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "mcpName": "io.github.dingdawg/dingdawg-planning-agent",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ]
+}
